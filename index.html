@@ -1,381 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Bilgesu Barış | Yazılım Mühendisi</title>
-  <meta name="description" content="Bilgesu Barış’ın yazılım geliştirme projeleri, teknik yetkinlikleri ve deneyimleri.">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bilgesu Barış | Yazılım Mühendisi</title>
+<meta name="description" content="Bilgesu Barış’ın yazılım geliştirme projeleri, teknik yetkinlikleri ve deneyimleri.">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 <canvas id="bg" aria-hidden="true"></canvas>
-
-<header>
-  <nav id="nav">
-    <a href="#ana-sayfa">Ana sayfa</a>
-    <a href="#hakkimda">Hakkımda</a>
-    <a href="#yetenekler">Yetenekler</a>
-    <a href="#deneyim">Deneyim</a>
-    <a href="#sertifikalar">Sertifikalar</a>
-    <a href="#projeler">Projelerim</a>
-    <a href="#iletisim">İletişim</a>
-  </nav>
-</header>
-
+<header><nav id="nav">
+<a href="#ana-sayfa">Ana sayfa</a><a href="#hakkimda">Hakkımda</a><a href="#yetenekler">Yetenekler</a><a href="#deneyim">Deneyim</a><a href="#sertifikalar">Sertifikalar</a><a href="#projeler">Projelerim</a><a href="#iletisim">İletişim</a>
+</nav></header>
 <main>
-
-<!-- ANA SAYFA -->
 <section data-v="ana-sayfa">
-  <div class="hero">
-    <div>
-      <h1>Bilgesu Barış</h1>
-      <p class="title">Yazılım Mühendisi</p>
-      <p>Web ve backend geliştirme alanlarında çalışan bir yazılım mühendisiyim. Kullanıcı ihtiyaçlarını anlaşılır, işlevsel ve sürdürülebilir dijital çözümlere dönüştürmeyi seviyorum.</p>
-
-      <div class="tags">
-        <span>React</span>
-        <span>Spring Boot</span>
-        <span>Node.js</span>
-        <span>Python</span>
-        <span>PyTorch</span>
-      </div>
-
-      <div class="btns">
-        <a class="btn main" href="#projeler">Projelerimi incele</a>
-        <a class="btn" href="#iletisim">İletişime geç</a>
-        <a class="btn" href="Bilgesu_Baris.pdf" target="_blank" rel="noopener noreferrer">CV'yi Görüntüle</a>
-      </div>
-    </div>
-
-    <div class="code" aria-hidden="true">
-      <div class="dots"><i></i><i></i><i></i></div>
-      <pre><span class="m">const</span> bilgesu <span class="m">=</span> {
-  <span class="k">rol</span>: "Yazılım Mühendisi",
-  <span class="k">konum</span>: "Ankara",
-  <span class="k">okul</span>: "Fırat Üniversitesi",
-  <span class="k">odak</span>: ["web", "backend", "yapay zekâ"],
-};</pre>
-    </div>
-  </div>
-
-  <div class="stats">
-    <div class="stat"><b>2</b><span class="muted">staj deneyimi</span></div>
-    <div class="stat"><b>9</b><span class="muted">proje</span></div>
-    <div class="stat"><b>3.07</b><span class="muted">not ortalaması</span></div>
-  </div>
-</section>
-
-<!-- HAKKIMDA -->
-<section data-v="hakkimda" hidden>
-  <h2>Hakkımda</h2>
-  <p>Fırat Üniversitesi Yazılım Mühendisliği mezunuyum. REST API’ler, veritabanları ve tam yığın web projeleri üzerinde çalıştım. Şu an React, TypeScript, Node.js ve Python’da kendimi geliştiriyorum. Hem bireysel hem ekip projelerinde çalışmayı severim.</p>
-
-  <div class="two" style="margin-top:2rem">
-    <div>
-      <h3>Kişisel bilgiler</h3>
-      <dl>
-        <dt>İsim</dt><dd>Bilgesu Barış</dd>
-        <dt>Konum</dt><dd>Ankara, Türkiye</dd>
-        <dt>E-posta</dt><dd><a href="mailto:bilgesubaris@gmail.com">bilgesubaris@gmail.com</a></dd>
-      </dl>
-    </div>
-
-    <div>
-      <h3>Yetenekler</h3>
-      <div class="skill"><span>HTML / CSS</span><div class="bar"><i style="width:90%"></i></div><span>90%</span></div>
-      <div class="skill"><span>JavaScript</span><div class="bar"><i style="width:80%"></i></div><span>80%</span></div>
-      <div class="skill"><span>React</span><div class="bar"><i style="width:75%"></i></div><span>75%</span></div>
-      <div class="skill"><span>Python</span><div class="bar"><i style="width:75%"></i></div><span>75%</span></div>
-      <div class="skill"><span>Java / Spring</span><div class="bar"><i style="width:70%"></i></div><span>70%</span></div>
-      <div class="skill"><span>SQL</span><div class="bar"><i style="width:65%"></i></div><span>65%</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- YETENEKLER -->
-<section data-v="yetenekler" hidden>
-  <h2>Teknik yetenekler</h2>
-  <p class="muted">Projelerimde kullandığım ve üzerinde çalıştığım teknolojileri alanlarına göre inceleyebilirsiniz.</p>
-
-  <div class="skill-groups">
-    <div class="skill-group">
-      <h3>Frontend</h3>
-      <div class="skill-pills">
-        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>TypeScript</span><span>Responsive Design</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <h3>Backend</h3>
-      <div class="skill-pills">
-        <span>Java</span><span>Spring Boot</span><span>Node.js</span><span>REST API</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <h3>Veritabanı</h3>
-      <div class="skill-pills">
-        <span>MySQL</span><span>PostgreSQL</span><span>Firebase</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <h3>Yapay zekâ</h3>
-      <div class="skill-pills">
-        <span>Python</span><span>PyTorch</span><span>Vision Transformer</span><span>Streamlit</span>
-      </div>
-    </div>
-
-    <div class="skill-group">
-      <h3>Araçlar ve yöntemler</h3>
-      <div class="skill-pills">
-        <span>Git</span><span>GitHub</span><span>OOP</span><span>Agile takım çalışması</span><span>Test ve hata ayıklama</span>
-      </div>
-    </div>
-  </div>
-
-  <p class="note" style="margin-top:1.5rem">Not: Teknoloji listesi proje deneyimlerimi ve öğrenme sürecimi birlikte yansıtır. Her teknolojide aynı düzeyde uzmanlık iddiası taşımaz.</p>
-</section>
-
-<!-- DENEYİM -->
-<section data-v="deneyim" hidden>
-  <h2>Deneyim ve eğitim</h2>
-
-  <div class="tl">
-    <div>
-      <small>Ekim 2025 – Haziran 2026</small>
-      <b>Başkan, Erasmus Student Community Elazığ</b>
-      Erasmus Günleri etkinliklerinin planlamasını, tanıtımını ve koordinasyonunu yönettim.
-    </div>
-
-    <div>
-      <small>Eylül 2025 – Ocak 2026</small>
-      <b>Yazılım stajyeri, Fırat Üniversitesi</b>
-      Üniversite genelindeki Erasmus yönetim sisteminde React, Spring Boot ve MySQL ile backend servisleri geliştirdim.
-    </div>
-
-    <div>
-      <small>Temmuz – Eylül 2025</small>
-      <b>Yazılım stajyeri, Millî Eğitim Bakanlığı</b>
-      Dijital eğitim projelerinde analiz, test ve dokümantasyon süreçlerinde yer aldım.
-    </div>
-
-    <div>
-      <small>Gönüllü çalışma</small>
-      <b>Gönüllü mühendislik çalışmaları, İpekYolu Çocuk ve Genç Çalışma Yeri</b>
-      Çocuklara yönelik teknoloji çalışmalarına katkı sundum; 3D modelleme, dilimleme ve 3D yazıcı süreçlerinde görev aldım.
-    </div>
-
-    <div>
-      <small>Mezuniyet: Haziran 2026</small>
-      <b>Yazılım Mühendisliği lisans, Fırat Üniversitesi</b>
-      Genel not ortalaması 3.07 / 4.00.
-    </div>
-  </div>
-</section>
-
-<!-- SERTİFİKALAR -->
-<section data-v="sertifikalar" hidden>
-  <h2>Sertifikalar ve Eğitimler</h2>
-<div class="course">
-      <b>
-        <a href="Introduction_to_Cybersecurity_certificate.pdf" target="_blank" rel="noopener noreferrer">
-          Introduction to Cybersecurity
-        </a>
-      </b>
-      <small>Cisco Networking Academy (NetAcad)</small>
-    </div>
-  <div class="courses">
-        <div class="course">
-
-      <b>Introduction to Big Data</b>
-      <small>WSGE University of Applied Sciences, Polonya (Research Universities Project)</small>
-    </div>
-<div class="course">
-  <b>
-    <a href="Bilgesu_Bais_Ileri_Java_101.pdf" target="_blank" rel="noopener noreferrer">
-      İleri Java 101
-    </a>
-  </b>
-  <small>Turkcell Geleceği Yazanlar</small>
+<h1>Bilgesu Barış</h1>
+<p class="title">Yazılım Mühendisi</p>
+<p class="lead">Web ve backend geliştirme alanlarında çalışan bir yazılım mühendisiyim. Kullanıcı ihtiyaçlarını anlaşılır, işlevsel ve sürdürülebilir dijital çözümlere dönüştürmeyi seviyorum.</p>
+<div class="tags"><span>React</span><span>Spring Boot</span><span>Node.js</span><span>Python</span><span>PyTorch</span></div>
+<div class="btns">
+<a class="btn main" href="#projeler">Projelerimi incele</a>
+<a class="btn" href="#iletisim">İletişime geç</a>
+<a class="btn" href="Bilgesu_Baris.pdf" target="_blank" rel="noopener noreferrer">CV’yi görüntüle</a>
 </div>
-    <div class="course">
-      <b>Python 101</b>
-      <small>Turkcell Geleceği Yazanlar</small>
-    </div>
-
-    <div class="course">
-      <b>Python 201</b>
-      <small>Turkcell Geleceği Yazanlar</small>
-    </div>
-
-    <div class="course">
-      <b>Python 301</b>
-      <small>Turkcell Geleceği Yazanlar</small>
-    </div>
-
-    <div class="course">
-      <b>Python 401</b>
-      <small>Turkcell Geleceği Yazanlar</small>
-    </div>
-
-    <div class="course">
-      <b>Veri Bilimi ve Yapay Zekâ 101</b>
-      <small>Turkcell Geleceği Yazanlar</small>
-    </div>
-
-    <div class="course">
-      <b>Veri Bilimi ve Yapay Zekâ 201</b>
-      <small>Turkcell Geleceği Yazanlar</small>
-    </div>
-  </div>
+<div class="stats">
+<div><b>2</b><span>staj deneyimi</span></div><div><b>9</b><span>proje</span></div><div><b>3.07</b><span>not ortalaması</span></div>
+</div>
 </section>
 
-<!-- PROJELER -->
+<section data-v="hakkimda" hidden>
+<h2>Hakkımda</h2>
+<p>Fırat Üniversitesi Yazılım Mühendisliği mezunuyum. REST API’ler, veritabanları ve tam yığın web projeleri üzerinde çalıştım. Şu an React, TypeScript, Node.js ve Python’da kendimi geliştiriyorum. Hem bireysel hem ekip projelerinde çalışmayı severim.</p>
+<div class="two">
+<div><h3>Kişisel bilgiler</h3>
+<dl><dt>İsim</dt><dd>Bilgesu Barış</dd><dt>Konum</dt><dd>Ankara, Türkiye</dd><dt>E-posta</dt><dd><a href="mailto:bilgesubaris@gmail.com">bilgesubaris@gmail.com</a></dd></dl></div>
+<div id="bars"><h3>Yetenekler</h3></div>
+</div>
+</section>
+
+<section data-v="yetenekler" hidden>
+<h2>Teknik yetenekler</h2>
+<p class="muted">Projelerimde kullandığım teknolojiler, alanlarına göre.</p>
+<div id="groups"></div>
+<p class="muted note">Not: Liste, proje deneyimlerimi ve öğrenme sürecimi birlikte yansıtır; her teknolojide aynı düzeyde uzmanlık iddiası taşımaz.</p>
+</section>
+
+<section data-v="deneyim" hidden>
+<h2>Deneyim ve eğitim</h2>
+<div class="tl">
+<div><small>Ekim 2025 – Haziran 2026</small><b>Başkan, Erasmus Student Community Elazığ</b>Erasmus Günleri etkinliklerinin planlamasını, tanıtımını ve koordinasyonunu yönettim.</div>
+<div><small>Eylül 2025 – Ocak 2026</small><b>Yazılım stajyeri, Fırat Üniversitesi</b>Erasmus yönetim sisteminde React, Spring Boot ve MySQL ile backend servisleri geliştirdim.</div>
+<div><small>Temmuz – Eylül 2025</small><b>Yazılım stajyeri, Millî Eğitim Bakanlığı</b>Dijital eğitim projelerinde analiz, test ve dokümantasyon süreçlerinde yer aldım.</div>
+<div><small>Gönüllü çalışma</small><b>İpekYolu Çocuk ve Genç Çalışma Yeri</b>Çocuklara yönelik teknoloji çalışmalarına katkı sundum; 3D modelleme, dilimleme ve 3D yazıcı süreçlerinde görev aldım.</div>
+<div><small>Mezuniyet: Haziran 2026</small><b>Yazılım Mühendisliği lisans, Fırat Üniversitesi</b>Genel not ortalaması 3.07 / 4.00.</div>
+</div>
+</section>
+
+<section data-v="sertifikalar" hidden>
+<h2>Sertifikalar ve eğitimler</h2>
+<div id="courses"></div>
+</section>
+
 <section data-v="projeler" hidden>
-  <h2>Projelerim</h2>
-
-  <div class="chips" role="group" aria-label="Proje türü">
-    <button aria-pressed="true" data-f="all">Tümü</button>
-    <button aria-pressed="false" data-f="web">Web</button>
-    <button aria-pressed="false" data-f="yz">Yapay zekâ</button>
-    <button aria-pressed="false" data-f="mobil">Mobil</button>
-    <button aria-pressed="false" data-f="masaustu">Masaüstü</button>
-    <button aria-pressed="false" data-f="diger">Diğer</button>
-  </div>
-
-  <div class="grid">
-
-    <div class="card project-card" data-t="yz">
-      <div class="tile">AI / Computer Vision</div>
-      <div class="details">
-        <b>AI Image Detector</b>
-        <small>Bitirme projesi: Görüntülerin gerçek veya yapay zekâ üretimi olup olmadığını sınıflandırmaya yönelik deepfake tespit sistemi.</small>
-        <div class="tech"><span>Python</span><span>PyTorch</span><span>ViT</span><span>Streamlit</span></div>
-        <a class="project-link" href="https://github.com/Bilgesubaris/Ai_Image_Detector" target="_blank" rel="noopener noreferrer">GitHub deposunu incele ↗</a>
-      </div>
-    </div>
-
-    <div class="card project-card" data-t="web">
-      <div class="tile">Web Application</div>
-      <div class="details">
-        <b>Erasmus+ Web Platformu</b>
-        <small>Başvuru ve yönetim süreçlerini destekleyen; rol tabanlı erişim ve yönetici paneli içeren web platformu.</small>
-        <div class="tech"><span>React</span><span>Node.js</span><span>Firebase</span></div>
-        <a class="project-link" href="https://github.com/Bilgesubaris" target="_blank" rel="noopener noreferrer">GitHub profilimde incele ↗</a>
-      </div>
-    </div>
-
-    <div class="card project-card" data-t="web">
-      <div class="tile">Movie & TV Platform</div>
-      <div class="details">
-        <b>TVision+</b>
-        <small>Film ve dizi içeriklerini keşfetmeye yönelik web uygulaması.</small>
-        <div class="tech"><span>JavaScript</span><span>Node.js</span><span>PostgreSQL</span><span>TMDB API</span></div>
-        <a class="project-link" href="https://github.com/Bilgesubaris" target="_blank" rel="noopener noreferrer">GitHub profilimde incele ↗</a>
-      </div>
-    </div>
-
-    <div class="card project-card" data-t="web">
-      <div class="tile">Productivity Web App</div>
-      <div class="details">
-        <b>Pomodoro</b>
-        <small>Çalışma ve mola sürelerini yönetmeye, kişisel çalışma oturumları oluşturmaya, not almaya ve görevleri takip etmeye olanak sağlayan web uygulaması.</small>
-        <div class="tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Firebase</span><span>Firestore</span></div>
-        <a class="project-link" href="https://pomodoro-7bde7.web.app" target="_blank" rel="noopener noreferrer">Canlı Demo ↗</a>
-        <a class="project-link" href="https://github.com/Bilgesubaris/Pomodoro" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-      </div>
-    </div>
-
-    <div class="card project-card" data-t="web">
-      <div class="tile">Beauty & E-Commerce Platform</div>
-      <div class="details">
-        <b>Shine Beauty Center</b>
-        <small>Güzellik merkezi için geliştirilen; ürün, kategori ve stok yönetimi ile yönetici işlemlerini destekleyen web tabanlı e-ticaret projesi.</small>
-        <div class="tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Node.js</span><span>Express.js</span><span>PostgreSQL</span></div>
-        <a class="project-link" href="https://github.com/Bilgesubaris/Shine-Beauty-Center" target="_blank" rel="noopener noreferrer">GitHub deposunu incele ↗</a>
-      </div>
-    </div>
-
-    <div class="card project-card" data-t="mobil">
-      <div class="tile">Augmented Reality</div>
-      <div class="details">
-        <b>HARPUT AR</b>
-        <small>Harput’un kültürel mirasını 3D içeriklerle tanıtmayı amaçlayan artırılmış gerçeklik projesi.</small>
-        <div class="tech"><span>AR</span><span>3D</span></div>
-        <a class="project-link" href="https://github.com/Bilgesubaris" target="_blank" rel="noopener noreferrer">GitHub profilimde incele ↗</a>
-      </div>
-    </div>
-
-    <div class="card project-card" data-t="masaustu">
-      <div class="tile">Java / Desktop Application</div>
-      <div class="details">
-        <b>Hastane Otomasyonu</b>
-        <small>Hastane süreçlerinin yönetilmesine yönelik masaüstü uygulaması.</small>
-        <div class="tech"><span>Java</span><span>OOP</span></div>
-        <a class="project-link" href="https://github.com/Bilgesubaris/Hastane-Otomasyonu" target="_blank" rel="noopener noreferrer">GitHub deposunu incele ↗</a>
-      </div>
-    </div>
-
-    <div class="card project-card" data-t="masaustu">
-      <div class="tile">C# / Desktop Application</div>
-      <div class="details">
-        <b>C# Hastane Otomasyonu</b>
-        <small>Hasta kayıt ve yönetim işlemlerini destekleyen hastane otomasyon uygulaması.</small>
-        <div class="tech"><span>C#</span><span>.NET</span><span>SQL</span><span>OOP</span></div>
-        <a class="project-link" href="https://github.com/Bilgesubaris/C-Hastane-Otomasyonu" target="_blank" rel="noopener noreferrer">GitHub deposunu incele ↗</a>
-      </div>
-    </div>
-
-    <div class="card project-card" data-t="diger">
-      <div class="tile">Algorithm</div>
-      <div class="details">
-        <b>Akıllı Telefonlar için Sıkıştırma Algoritması</b>
-        <small>Yeni nesil akıllı telefonlara yönelik sıkıştırma algoritması çalışması.</small>
-        <div class="tech"><span>Algoritmalar</span></div>
-        <a class="project-link" href="https://github.com/Bilgesubaris/yeni-nesil-akilli-telefonlarinin-sikistirma-algoritmasi" target="_blank" rel="noopener noreferrer">GitHub deposunu incele ↗</a>
-      </div>
-    </div>
-
-  </div>
+<h2>Projelerim</h2>
+<div class="chips" id="chips" role="group" aria-label="Proje türü"></div>
+<div class="grid" id="grid"></div>
 </section>
 
-<!-- İLETİŞİM -->
 <section data-v="iletisim" hidden>
-  <h2>İletişim</h2>
-
-  <div class="two">
-    <div>
-      <p>Bana e-postayla ya da sosyal medya hesaplarımdan ulaşabilirsiniz.</p>
-      <dl>
-        <dt>E-posta</dt>
-        <dd><a href="mailto:bilgesubaris@gmail.com">bilgesubaris@gmail.com</a></dd>
-
-        <dt>GitHub</dt>
-        <dd><a href="https://github.com/Bilgesubaris">Bilgesubaris</a></dd>
-
-        <dt>LinkedIn</dt>
-        <dd><a href="https://www.linkedin.com/in/bilgesu-bar%C4%B1%C5%9F-57b223252/">Profilimi aç</a></dd>
-      </dl>
-    </div>
-
-    <form id="f">
-      <label>Adınız<input name="ad" required autocomplete="name"></label>
-      <label>E-posta adresiniz<input name="mail" type="email" required autocomplete="email"></label>
-      <label>Mesajınız<textarea name="msg" required></textarea></label>
-      <div><button class="btn main" type="submit">Mesaj gönder</button></div>
-    </form>
-  </div>
+<h2>İletişim</h2>
+<div class="two">
+<div><p>Bana e-postayla ya da sosyal medyadan ulaşabilirsiniz.</p>
+<dl><dt>E-posta</dt><dd><a href="mailto:bilgesubaris@gmail.com">bilgesubaris@gmail.com</a></dd>
+<dt>GitHub</dt><dd><a href="https://github.com/Bilgesubaris" target="_blank" rel="noopener noreferrer">Bilgesubaris</a></dd>
+<dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/bilgesu-bar%C4%B1%C5%9F-57b223252/" target="_blank" rel="noopener noreferrer">Profilimi aç</a></dd></dl></div>
+<form id="f">
+<label>Adınız<input name="ad" required autocomplete="name"></label>
+<label>E-posta adresiniz<input name="mail" type="email" required autocomplete="email"></label>
+<label>Mesajınız<textarea name="msg" rows="5" required></textarea></label>
+<button class="btn main" type="submit">Mesaj gönder</button>
+</form>
+</div>
 </section>
-
 </main>
-
 <footer>© 2026 Bilgesu Barış · Yazılım Mühendisi</footer>
-
 <script src="script.js"></script>
 </body>
 </html>
